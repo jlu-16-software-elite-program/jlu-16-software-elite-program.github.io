@@ -80,9 +80,9 @@ dream:
 # 是否在首页显示音乐.
 music:
   enable: true
-  showTitle: true
+  showTitle: false
   title: 听听音乐
-  fixed: false # 开启吸底模式
+  fixed: true # 开启吸底模式
   autoplay: true # 是否自动播放
   theme: '#42b983'
   loop: 'all' # 音频循环播放, 可选值: 'all', 'one', 'none'
@@ -116,6 +116,10 @@ recommend:
   useConfig: false # 是否使用配置文件, 在 _data/recommends.json 下配置推荐文章, false则会走主题配置的 top 属性
   # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/recommends.json 移动到 my-blog/source/_data/下修改配置即可
 
+map:
+  enable: true
+
+
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
 favicon: /favicon.png
@@ -139,11 +143,11 @@ indexbtn:
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  github:  https://github.com/JLUtangchuan
-  email: 1169551419@qq.com
+  github:  # https://github.com/JLUtangchuan
+  email: # 1169551419@qq.com
   facebook: # https://www.facebook.com/xxx
   twitter: # https://twitter.com/xxx
-  qq: 1169551419
+  qq: # 1169551419
   weibo: # https://weibo.com/xxx
   zhihu: # https://www.zhihu.com/xxx
   rss: false # true、false
@@ -198,8 +202,8 @@ mathjax:
 postInfo:
   date: true # 发布日期
   update: true # 更新日期
-  wordCount: true # 文章字数统计
-  totalCount: true # 站点总文章字数
+  wordCount: false # 文章字数统计
+  totalCount: false # 站点总文章字数
   min2read: false # 文章阅读时长
   readCount: true # 文章阅读次数
 
@@ -211,9 +215,9 @@ clicklove:
 # profile in about page, including avatars, career, and personal introductions.
 # 在”关于”页面中配置个人信息，包括头像、职业和个人介绍.
 profile:
-  avatar: /medias/cat.jpg
-  career: Student
-  introduction: If you wish to succeed, you should use persistence as your good friend, experience as your reference, prudence as your brother and hope as your sentry.
+  avatar: /medias/jd-xhh.jpg
+  career: 
+  introduction: 
 
 # config my projects informations in about page.
 # If you don't want to display this `My Projects` content, you can deactivate or delete this configuration.
@@ -428,7 +432,7 @@ featureImages:
 # noreprint（不允许转载 not allowed to reprint）
 # pay（付费转载 pay for reprinting）
 reprint:
-  enable: true # whether enable reprint section 是否启用“转载规则限定模块”
+  enable: false # whether enable reprint section 是否启用“转载规则限定模块”
   default: cc_by
 
 # DaoVoice online contact

@@ -1,13 +1,13 @@
-posts: 文章
-category: 分类
-categories: 分类
+posts: 摄影
+category: 作者
+categories: 作者
 tag: 标签
 tags: 标签
 archives: 归档
 about: 关于
 contact: 留言板
 friends: 友情链接
-startRead: 开始阅读
+startRead: 开启回忆
 recommendedPosts: 推荐文章
 publishDate: 发布日期
 updateDate: 更新日期
@@ -22,16 +22,16 @@ prev: 上一篇
 next: 下一篇
 search: 搜索
 searchTip: 请输入搜索的关键字
-postTagTitle: 文章标签
+postTagTitle: 图片标签
 postCategoryTitle: 文章分类
-categoryRadarTitle: 文章分类雷达图
-categoryNumber: 文章分类数量
+categoryRadarTitle: 图片分类雷达图
+categoryNumber: 图片分类数量
 categoryEmptyTip: 你目前还没有对文章进行分类.
-postCharts: 文章统计图
-postPublishChart: 文章发布统计图
-categoriesChart: 文章分类统计图
-top10TagsChart: TOP10 标签统计图
-postsNumberName: 文章篇数
+postCharts: 图片统计
+postPublishChart: 更新频率统计
+categoriesChart: 图片来源统计
+top10TagsChart: Super Stars
+postsNumberName: 作品篇数
 maximum: 最大值
 minimum: 最小值
 average: 平均值
