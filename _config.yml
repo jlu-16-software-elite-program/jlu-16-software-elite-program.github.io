@@ -13,7 +13,8 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://jlutangchuan.github.io
+# url: http://jlutangchuan.github.io
+url: http://jlu-16-software-elite-program.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -103,7 +104,8 @@ theme: hexo-theme-matery
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/JLUtangchuan/JLUtangchuan.github.io
+  # repo: https://github.com/JLUtangpchuan/JLUtangchuan.github.io
+  repo: https://github.com/jlu-16-software-elite-program/jlu-16-software-elite-program.github.io
   branch: master
 
 # link 中文转拼音
