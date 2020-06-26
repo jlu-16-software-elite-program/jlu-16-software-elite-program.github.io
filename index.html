@@ -1,0 +1,904 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="卓班通讯录">
+    <meta name="description" content="卓班通讯录">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>卓班通讯录</title>
+    <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/medias/logo.png">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/css/my.css">
+    
+    <script src="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/libs/jquery/jquery.min.js"></script>
+    
+<meta name="generator" content="Hexo 4.2.0"><link rel="stylesheet" href="/css/prism-tomorrow.css" type="text/css"></head>
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper head-container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">卓班通讯录</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>个人图库</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>时间线</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>毕业去向</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>同学</span>
+    </a>
+    
+  </li>
+  
+  <!-- <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li> -->
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">卓班通讯录</div>
+        <div class="logo-desc">
+            
+            卓班一家亲
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			个人图库
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			时间线
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			毕业去向
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			同学
+		</a>
+          
+        </li>
+        
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+    
+<style>
+    .carousel-control {
+        width: 45px;
+        height: 45px;
+        line-height: 55px;
+        border-radius: 45px;
+        background: transparent;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    #prev-cover {
+        position: absolute;
+        top: 48%;
+        left: 8px;
+    }
+
+    #next-cover {
+        position: absolute;
+        top: 48%;
+        right: 8px;;
+    }
+
+    #prev-cover i {
+        margin-right: 3px;
+    }
+
+    #next-cover i {
+        margin-left: 3px;
+    }
+
+    .carousel-control:hover {
+        background-color:rgba(0, 0, 0, .4);
+    }
+
+    .carousel-control i {
+        color: #fff;
+        font-size: 2.4rem;
+    }
+</style>
+
+
+
+<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
+    
+
+    <div class="carousel-item red white-text bg-cover about-cover">
+        <div class="container">
+            <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                吉林大学2016级软件工程卓越工程师班通讯录
+                
+            </div>
+
+            <div class="description center-align">
+                
+                <span id="subtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: ['卓班一家亲','Zhuo Ban Yi Jia Qin'],
+                        startDelay: 300,
+                        typeSpeed: 100,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                </script>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    // 每天切换 banner 图.  Switch banner image every day.
+    $('.bg-cover').css('background-image', 'url(https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/medias/banner/' + new Date().getDay() + '.jpg)');
+</script>
+
+
+
+            <div class="cover-btns">
+                <a href="#indexCard" class="waves-effect waves-light btn">
+                    <i class="fa fa-angle-double-down"></i>开启回忆
+                </a>
+
+                
+            </div>
+            <div class="cover-social-link">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script>
+    $(function () {
+        let coverSlider = $('.carousel');
+        coverSlider.carousel({
+            duration: Number('120'),
+            fullWidth: true,
+            indicators: 'true' === 'true'
+        });
+
+        let carouselIntervalId;
+        
+        // Loop to call the next cover article picture.
+        let autoCarousel = function() {
+            carouselIntervalId = setInterval(function () {
+                coverSlider.carousel('next');
+            }, 5000);
+        };
+        autoCarousel();
+        
+
+        let restartPlay = function () {
+            
+            clearInterval(carouselIntervalId);
+            autoCarousel();
+            
+        };
+
+        
+        // prev and next cover post.
+        $('#prev-cover').click(function () {
+            coverSlider.carousel('prev');
+            restartPlay();
+        });
+        $('#next-cover').click(function () {
+            coverSlider.carousel('next');
+            restartPlay();
+        });
+        
+    });
+</script>
+
+
+
+<main class="content">
+
+    
+
+    
+        
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/libs/aplayer/APlayer.min.css">
+<div class="">
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="aplayer" class="music"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/libs/aplayer/APlayer.min.js"></script>
+<script>
+$(function () {
+    new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: 'true' === 'true',
+        autoplay: 'true' === 'true',
+        theme: '#42b983',
+        loop: 'all',
+        order: 'list',
+        preload: 'auto',
+        volume: Number('0.7'),
+        listFolded: 'true' === 'true',
+        listMaxHeight: '',
+        audio: eval([{"name":"Always With Me","artist":"宗次郎","url":"https://cdn.jsdelivr.net/gh/JLUtangchuan/picBed@1.1/E8r%20-%20%E3%80%8AE8r%E9%92%A2%E7%90%B4%E6%9B%B2%E3%80%8B%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB%20Always%20With%20Me.mp3","cover":"https://cdn.jsdelivr.net/gh/JLUtangchuan/picBed@1.0/qyqs.jpg"}])
+    });
+});
+</script>
+    
+
+    
+    <div id="indexCard" class="index-card">
+        <div class="container ">
+            
+                
+<div id="from" style="width:100%;height:700px;" data-aos="zoom-in-up"></div>
+<script src="https://cdn.bootcss.com/aos/2.3.4/aos.js"></script>
+
+<!-- <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script> -->
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/echarts/4.8.0/echarts.min.js"></script>
+
+<!-- <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script> -->
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/echarts-gl/1.1.2/echarts-gl.min.js"></script>
+
+<!-- <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script> -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat@1.1.1/dist/ecStat.min.js"></script>
+
+<!-- <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script> -->
+<script type="text/javascript" src="https://libs.cdnjs.net/echarts/4.8.0/extension/dataTool.min.js"></script>
+
+<!-- <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script> -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/map/js/china.js"></script>
+
+<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=yOd1NZjGZEiW2UFpkXFLPhhxq5wioBnR"></script>
+
+<!-- <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script> -->
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/echarts/4.8.0/extension/bmap.min.js"></script>
+
+<!-- <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/simplex.js"></script> -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/libs/others/simplex.js"></script>
+
+<script type="text/javascript">
+var fromChart = echarts.init(document.getElementById('from'));
+var data = [
+    {name: '北京', value: ['张霖']},
+    {name: '泉州', value: ['黄昕睿']},
+    {name: '南宁', value: ['韦镇源']},
+    {name: '邯郸', value: ['唐川']},
+    {name: '廊坊', value: ['吕国光']},
+    {name: '张家口', value: ['窦星磊']},
+    {name: '洛阳', value: ['侯逸骅']},
+    {name: '郑州', value: ['霍昱周','李钦伦']},
+    {name: '安阳', value: ['高英杰']},
+    {name: '开封', value: ['孙婧伊']},
+    {name: '漯河', value: ['陈鹏飞']},
+    {name: '商丘', value: ['李岩']},
+    {name: '信阳', value: ['刁永动']},
+    {name: '大庆', value: ['叶子铭']},
+    {name: '大冶', value: ['宋栿浒']},
+    {name: '武汉', value: ['陶锴']},
+    {name: '耒阳', value: ['张顺根']},
+    {name: '四平', value: ['张翠','张健铭']},
+    {name: '长春', value: ['太然','蒋璐宇','石雨鑫']},
+    {name: '通化', value: ['于涛']},
+    {name: '扬州', value: ['李静']},
+    {name: '大连', value: ['郭安']},
+    {name: '抚顺', value: ['于海川']},
+    {name: '淄博', value: ['朱小谢']},
+    {name: '烟台', value: ['宋嘉庚']},
+    {name: '东营', value: ['王瀚橙']},
+];
+var province = [
+    {name: '北京', value: 1},
+    {name: '福建', value: 1},
+    {name: '广西', value: 1},
+    {name: '河北', value: 3},
+    {name: '河南', value: 8},
+    {name: '黑龙江', value: 1},
+    {name: '湖北', value: 2},
+    {name: '湖南', value: 1},
+    {name: '吉林', value: 6},
+    {name: '江苏', value: 1},
+    {name: '辽宁', value: 2},
+    {name: '山东', value: 3},
+];
+var geoCoordMap = {
+    '商丘':[115.61396,34.44379],
+    '信阳':[114.05857,32.11683],
+    '大冶':[114.97977,30.09551],
+    '耒阳':[112.85988,26.42243],
+    '漯河':[113.9202,33.54528],
+    '廊坊':[116.68572,39.50311],
+    '通化':[125.95513,41.7285],
+    '四平':[124.41,43.16],
+    '烟台':[121.39,37.52],
+    '张家口':[114.87,40.82],
+    '大连':[121.62,38.92],
+    '长春':[125.35,43.88],
+    '东营':[118.49,37.46],
+    '扬州':[119.42,32.39],
+    '北京':[116.46,39.92],
+    '淄博':[118.05,36.78],
+    '安阳':[114.35,36.1],
+    '开封':[114.35,34.79],
+    '邯郸':[114.47,36.6],
+    '廊坊':[116.7,39.53],
+    '武汉':[114.31,30.52],
+    '大庆':[125.03,46.58],
+    '泉州':[118.58,24.93],
+    '南宁':[108.33,22.84],
+    '抚顺':[123.97,41.97],
+    '郑州':[113.65,34.76],
+    '洛阳':[112.44,34.7]
+};
+function convertData(data) {
+   var res = [];
+   for (var i = 0; i < data.length; i++) {
+       var geoCoord = geoCoordMap[data[i].name];
+       if (geoCoord) {
+           res.push({
+               name: data[i].name,
+               value: geoCoord,
+               stus: data[i].value 
+           });
+       }
+   }
+   return res;
+};
+function randomValue() {
+    return Math.round(Math.random()*30);
+}
+option = {
+    title: {
+        text: '卓班同学家乡统计',
+        left: 'center'
+    },
+    tooltip: {},
+    visualMap: {
+        min: 1,
+        max: 8,
+        seriesIndex: [1],
+        inRange: {
+            color: ['#e0ffff', '#006edd']
+        },
+        calculable : false
+    },
+    geo: {
+        map: 'china',
+        roam: false,
+        label: {
+            show: true,
+            color: 'rgba(0,0,0,0.6)'
+        },
+        itemStyle: {
+            borderColor: 'rgba(0, 0, 0, 0.3)'
+        },
+        emphasis:{
+            itemStyle: {
+                areaColor: null,
+                shadowOffsetX: 0,
+                shadowOffsetY: 0,
+                shadowBlur: 20,
+                borderWidth: 0,
+                shadowColor: 'rgba(0, 0, 0, 0.5)'
+            }
+        }
+    },
+    series : [
+        {
+            type: 'effectScatter',
+            coordinateSystem: 'geo',
+            data: convertData(data),
+            symbolSize:(rawValue, params) => {
+                params.symbolSize = params.data.stus.length*10
+                return params.symbolSize
+            },
+            symbol: 'circle',
+            symbolRotate: 0,
+            label: {
+                formatter: '{b}',
+                position: 'right',
+                show: false
+            },
+            itemStyle: {
+                color: '#F06C00'
+            },
+            showEffectOn: 'emphasis',
+            rippleEffect: {
+                brushType: 'stroke'
+            },
+            hoverAnimation: true,
+            emphasis: {
+                label: {
+                    show: true
+                }
+            },
+            tooltip:{
+                trigger:'item',
+                formatter(params){
+                    label='<b style="line-height:2; font-size:18px;">'+params.name+'</b><br/>'
+                    label+=params.data.stus.join('，')
+                    return label
+                }
+            }
+        },
+        {
+            name: '地区人数',
+            type: 'map',
+            geoIndex: 0,
+            data: province,
+            tooltip:{
+                trigger:'item',
+                formatter(params){
+                    if (isNaN(params.value)){
+                        return '没有同学来自'+params.name
+                    }else{
+                        return params.value+'名同学来自'+params.name
+                    }
+                }
+            }
+        }
+    ]
+};
+fromChart.setOption(option);
+</script>
+
+
+
+
+            
+        </div>
+    </div>
+    <!-- 所有文章卡片 -->
+    <article id="articles" class="container articles">
+        <div class="row article-row">
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2020/06/19/2020.06.18-bi-ye-tong-xun-lu/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/medias/featureimages/15.jpg" class="responsive-img" alt="卓班毕业通讯录">
+                            
+                            <span class="card-title">卓班毕业通讯录</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <!-- <div class="summary block-with-text">
+                            
+                                卓班毕业通讯录项目说明
+github page(静态网页)
+
+申请一个新的号 jlu_software_engineer_2016_11.github.io
+在一个模板基础上开发
+
+
+功能
+
+地图
+显示每个同学的去向图
+每个同学hometo
+                            
+                        </div> -->
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-19
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                JLU
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/dev/">
+                            <span class="chip bg-color">dev</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2020/06/19/huang-xin-rui-ru-he-he-zuo-jin-xing-kai-fa/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/medias/featureimages/5.jpg" class="responsive-img" alt="如何合作进行开发">
+                            
+                            <span class="card-title">如何合作进行开发</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <!-- <div class="summary block-with-text">
+                            
+                                如何合作进行开发如何一起开发我这个项目
+首先需要clone一下我这个项目，我这个项目的源代码在tc分支，静态page在master分支
+git clone -b tc https://github.com/JLUtangchuan/JLUt
+                            
+                        </div> -->
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-19
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                JLU
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/dev/">
+                            <span class="chip bg-color">dev</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2020/06/09/hello-world/">
+                        <div class="card-image">
+                            
+                            <img src="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/medias/imgs/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20200618194818.jpg" class="responsive-img" alt="毕业合影">
+                            
+                            <span class="card-title">毕业合影</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <!-- <div class="summary block-with-text">
+                            
+                                
+
+                            
+                        </div> -->
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-09
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/%E5%94%90%E5%B7%9D/" class="post-category">
+                                    唐川
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card-action article-tags">
+                        
+                        <a href="/tags/%E9%BB%84%E6%AC%A3%E7%9D%BF/">
+                            <span class="chip bg-color">黄欣睿</span>
+                        </a>
+                        
+                        <a href="/tags/%E7%8E%8B%E7%BF%B0%E6%A9%99/">
+                            <span class="chip bg-color">王翰橙</span>
+                        </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            <span id="year">2020</span>
+            <!-- <a href="http://jlu-16-software-elite-program.github.io" target="_blank">JLU</a> -->
+            <!-- |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a> -->
+            <!-- |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a> -->
+            <br>
+            
+            
+            
+            
+            
+            
+            <!-- <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span> -->
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <!-- <div class="col s12 m4 l4 social-link social-statis">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div> -->
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<!-- <script src="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script> -->
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/libs/materialize/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/libs/aos/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/js/matery.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
