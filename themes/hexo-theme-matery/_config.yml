@@ -5,21 +5,21 @@ menu:
   首页:
     url: /
     icon: fas fa-home
-  个人图库:
+  图库:
     url: /tags
     icon: fas fa-tags
   # 摄影师:
   #   url: /categories
   #   icon: fas fa-bookmark
-  时间线:
-    url: /archives
-    icon: fas fa-archive
+  # 时间线:
+  #   url: /archives
+  #   icon: fas fa-archive
   毕业去向:
     url: /about
     icon: fas fa-user-circle
-  # Contact:
-  #   url: /contact
-  #   icon: fas fa-comments
+  留言板:
+    url: /contact
+    icon: fas fa-comments
   同学:
     url: /friends
     icon: fas fa-address-book
@@ -62,19 +62,12 @@ cover:
   useConfig: false # 是否使用配置文件, 在 _data/covers.json 下配置推荐文章, false则使用主题在文章中的配置 cover coverImg
   # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/covers.json 移动到 my-blog/source/_data/下修改配置即可
 
-# index page dream text,
-# 配置首页显示"梦想"的语句.
-# dream:
-#   enable: true
-#   showTitle: true
-#   title: 我的梦想
-#   text: 不是每个人都应该像我这样去建造一座水晶大教堂，但是每个人都应该拥有自己的梦想，设计自己的梦想，追求自己的梦想，实现自己的梦想。梦想是生命的灵魂，是心灵的灯塔，是引导人走向成功的信仰。有了崇高的梦想，只要矢志不渝地追求，梦想就会成为现实，奋斗就会变成壮举，生命就会创造奇迹。——罗伯·舒乐
+
 dream:
   enable: false
   showTitle: true
-  title: 张嘉佳
-  text: 等待而已，也叫努力？是在等别人离开，还是在等自己放弃？
-  # text: 人最宝贵的东西是生命.生命对人来说只有一次.因此,人的一生应当这样度过:当一个人回首往事时,不因虚度年华而悔恨,也不因碌碌无为而羞愧;这样,在他临死的时候,能够说,我把整个生命和全部精力都献给了人生最宝贵的事业——为人类的解放而奋斗。
+  title: 
+  text: 
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
@@ -95,13 +88,13 @@ music:
 # Whether to display the videos.
 # 是否在首页显示视频.
 video:
-  enable: false
-  showTitle: true
+  enable: true
+  showTitle: false
   title: 精彩视频
-  url: # 必填
-  pic:
+  url: https://www.bilibili.com/video/BV1wz4y1R7Xk # 必填
+  pic: https://cdn.jsdelivr.net/gh/JLUtangchuan/picBed@dev/img/20200626210039.png
   thumbnails:
-  height: # 如：400
+  height: 600# 如：400
   autoplay: false # 是否自动播放
   theme: '#42b983'
   loop: false # 是否循环播放
@@ -284,13 +277,13 @@ postCalendar: true
 # the Gitalk config，default disabled
 # Gitalk 评论模块的配置，默认为不激活
 gitalk:
-  enable: false
-  owner:
-  repo:
+  enable: true
+  owner: jlu-16-software-elite-program
+  repo: jlu-16-software-elite-program.github.io
   oauth:
-    clientId:
-    clientSecret:
-  admin:
+    clientId: 3234a7b0be4c4c0673eb
+    clientSecret: a4dcffd3bc73cba61ea6c3c72a344f3240b70a43
+  admin: jlu-16-software-elite-program
 
 # the Gitment config，default disabled
 # Gitment 评论模块的配置，默认为不激活
@@ -478,7 +471,7 @@ tidio:
 
 #背景canvas-nest
 canvas_nest:
-  enable: false
+  enable: true
   color: 0,0,255 # 线条颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
   pointColor: 0,0,255 # 交点颜色, 默认: '0,0,0' ；三个数字分别为(R,G,B)，注意用,分割
   opacity: 0.7 # 线条透明度（0~1）, 默认: 0.5
@@ -495,7 +488,7 @@ ribbon:
 
 # 背景动态彩带.
 ribbon_dynamic:
-  enable: false
+  enable: true
 
 # sharejs文章分享模块.
 # 支持顺序，可选项目为twitter, facebook, google, qq, qzone, wechat, weibo, douban, linkedin.
@@ -519,8 +512,7 @@ subtitle:
   backSpeed: 50 # 删除速度
   sub1: 卓班一家亲
   sub2: Zhuo Ban Yi Jia Qin
-  # sub1: 从来没有真正的绝境, 只有心灵的迷途
-  # sub2: Never really desperate, only the lost of the soul
+
 
 # 手机二级菜单.
 navMenu:
@@ -534,7 +526,7 @@ instantpage:
 # banner 是否每日切换.
 # 若为 false, 则 banner 默认为 /medias/banner/0.jpg
 banner:
-  enable: true
+  enable: false
 
 #ICP备案信息尾部显示
 icp:
@@ -551,4 +543,5 @@ icp:
 # 注：配置了此项，就代表着本地调试的时候，网站依然会去GitHub请求资源（原来的资源），本地调试的时候记得将 此项配置 注释或者删除掉
 # 更多关于访问速度优化，请查看：https://blog.sky03.cn/posts/42790.html
 jsDelivr:
-  url: https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io@master
+  # url: https://cdn.jsdelivr.net/gh/JLUtangchuan/JLUtangchuan.github.io@master
+  url: https://cdn.jsdelivr.net/gh/jlu-16-software-elite-program/jlu-16-software-elite-program.github.io@master

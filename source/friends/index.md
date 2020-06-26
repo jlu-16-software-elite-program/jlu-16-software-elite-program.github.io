@@ -1,13 +1,6 @@
 ---
 title: friends
 date: 2020-06-18 20:31:58
-
+type: "friends"
+layout: "friends"
 ---
-
-| 序号 | 姓名 | 家乡         | github       |
-| ---- | ---- | ------------ | ------------ |
-|      |      |              |              |
-| 15   | 唐川 | 河北省邯郸市 | JLUtangchuan |
-|      |      |              |              |
-|      |      |              |              |
-

@@ -104,8 +104,8 @@ theme: hexo-theme-matery
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  # repo: https://github.com/JLUtangpchuan/JLUtangchuan.github.io
-  repo: https://github.com/jlu-16-software-elite-program/jlu-16-software-elite-program.github.io
+  # repo: https://github.com/JLUtangchuan/JLUtangchuan.github.io.git
+  repo: https://github.com/jlu-16-software-elite-program/jlu-16-software-elite-program.github.io.git
   branch: master
 
 # link 中文转拼音
