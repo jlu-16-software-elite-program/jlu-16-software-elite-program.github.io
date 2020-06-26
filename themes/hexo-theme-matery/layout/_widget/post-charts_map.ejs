@@ -22,27 +22,8 @@
 </div>
 
 <script src="https://cdn.bootcss.com/aos/2.3.4/aos.js"></script>
-
 <script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/echarts/4.8.0/echarts.min.js"></script>
-
-<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/echarts-gl/1.1.2/echarts-gl.min.js"></script>
-
-<!-- <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script> -->
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-stat@1.1.1/dist/ecStat.min.js"></script>
-
-<!-- <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script> -->
-<script type="text/javascript" src="https://libs.cdnjs.net/echarts/4.8.0/extension/dataTool.min.js"></script>
-
-<!-- <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script> -->
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts@4.8.0/map/js/china.js"></script>
-
-<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=yOd1NZjGZEiW2UFpkXFLPhhxq5wioBnR"></script>
-
-<!-- <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script> -->
-<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/echarts/4.8.0/extension/bmap.min.js"></script>
-
-<!-- <script type="text/javascript" src="https://echarts.baidu.com/gallery/vendors/simplex.js"></script> -->
-<script type="text/javascript" src="<%- theme.jsDelivr.url %><%- theme.libs.js.simplex %>"></script>
 <script type="text/javascript" src="<%- theme.jsDelivr.url %>/js/world_new.js"></script>
 
 <script type="text/javascript">
@@ -132,12 +113,9 @@ function convertData(data) {
    }
    return res;
 };
-function randomValue() {
-    return Math.round(Math.random()*30);
-}
 option = {
     title: {
-        text: '我们从哪里来？',
+        text: '卓班同学家乡统计',
         left: 'center'
     },
     tooltip: {},
@@ -158,7 +136,8 @@ option = {
             color: 'rgba(0,0,0,0.6)'
         },
         itemStyle: {
-            borderColor: 'rgba(0, 0, 0, 0.3)'
+            borderColor: '#AAAAAA',
+            aeraColor:'#DDDDDD'
         },
         emphasis:{
             itemStyle: {
@@ -188,7 +167,7 @@ option = {
                 show: false
             },
             itemStyle: {
-                color: '#F06C00'
+                color: '#BB332F'
             },
             showEffectOn: 'emphasis',
             rippleEffect: {
@@ -241,7 +220,7 @@ var data = [
     {name: '北京', value: {'北京航空航天大学':['陶锴','叶子铭','高英杰'],'字节跳动':['侯逸骅'],'中国科学院软件研究所':['宋嘉庚'],'中国科学院计算技术研究所':['窦星磊']}},
     {name: '上海', value: {'上海交通大学':['张霖','张健铭','黄昕睿']}},
     {name: '沈阳', value: {'东北大学':['于海川']}},
-    {name: '深圳', value: {'哈尔滨工业大学（深圳）':['孙婧伊','李岩']}},
+    {name: '深圳', value: {'哈尔滨工业大学（深圳）':['孙婧伊']}},
     {name: '武汉', value: {'华中科技大学':['吕国光','李钦伦','张顺根']}},
     {name: '伦敦', value: {'帝国理工大学':['石雨鑫']}},
     {name: '墨尔本', value: {'墨尔本大学':['霍昱周']}}
@@ -252,7 +231,7 @@ var province=[
     {name: '北京', value: 6},
     {name: '上海', value: 3},
     {name: '辽宁', value: 1},
-    {name: '广东', value: 2},
+    {name: '广东', value: 1},
     {name: '湖北', value: 3},
     {name: 'United Kingdom', value: 1},
     {name: 'Australia', value: 1}
@@ -316,7 +295,7 @@ var convertLine = function (data) {
 var planePath = 'path://M1705.06,1318.313v-89.254l-319.9-221.799l0.073-208.063c0.521-84.662-26.629-121.796-63.961-121.491c-37.332-0.305-64.482,36.829-63.961,121.491l0.073,208.063l-319.9,221.799v89.254l330.343-157.288l12.238,241.308l-134.449,92.931l0.531,42.034l175.125-42.917l175.125,42.917l0.531-42.034l-134.449-92.931l12.238-241.308L1705.06,1318.313z';
 option = {
     title: {
-        text: '我们要到哪里去？',
+        text: '卓班同学毕业去向统计',
         left: 'center'
     },
     tooltip : {
@@ -341,7 +320,8 @@ option = {
             color: 'rgba(0,0,0,0.6)'
         },
         itemStyle: {
-            borderColor: 'rgba(0, 0, 0, 0.3)'
+            borderColor: '#AAAAAA',
+            aeraColor:'#DDDDDD'
         },
         emphasis:{
             itemStyle: {
