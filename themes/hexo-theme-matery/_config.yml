@@ -113,6 +113,9 @@ recommend:
 map:
   enable: true
 
+cloud:
+  enable: true
+
 
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
