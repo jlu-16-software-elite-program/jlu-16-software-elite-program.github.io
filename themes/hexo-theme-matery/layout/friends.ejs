@@ -187,7 +187,21 @@
         overflow: visible !important;
     }
 </style>
-
+<% if (theme.verifyPassword.enable) { %>
+    <script src="<%- theme.jsDelivr.url %><%- theme.libs.js.crypto %>"></script>
+    <script>
+        (function() {
+            let pwd = '<%- page.password %>';
+            if (pwd && pwd.length > 0) {
+                if (pwd !== CryptoJS.SHA256(prompt('<%- theme.verifyPassword.promptMessage %>')).toString(CryptoJS.enc.Hex)) {
+                    alert('<%- theme.verifyPassword.errorMessage %>');
+                    location.href = '<%- url_for("/")  %>';
+                }
+            }
+        })();
+    </script>
+<% } %>
+</script>
 <main class="content">
     <div class="container friends-container">
         <div class="card">
