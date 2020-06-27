@@ -6,4 +6,5 @@ node_modules/
 public/
 .deploy*/
 themes/hexo-theme-matery/source/medias/imgs/
+themes/hexo-theme-matery/source/medias/
 yarn.lock

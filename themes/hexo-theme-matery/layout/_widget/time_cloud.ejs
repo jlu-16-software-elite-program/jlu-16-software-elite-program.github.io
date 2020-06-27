@@ -1,6 +1,10 @@
-<script type="text/javascript" src="/js/echarts.min.js"></script>
-<script type="text/javascript" src="/js/echarts-wordcloud.js"></script>
-<div class="commentlist" style="height:800px;" id="mycloud"></div>
+<div class="card">
+    <div class="card-content">
+        <div class="commentlist" style="height:70rem;" id="mycloud"></div>
+    </div>
+</div>
+<script type="text/javascript" src="https://cdn.bootcdn.net/ajax/libs/echarts/4.8.0/echarts.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/echarts-wordcloud@1.1.3/dist/echarts-wordcloud.min.js"></script>
 <script>
     function randomNum(minNum,maxNum){ 
         switch(arguments.length){ 
@@ -99,7 +103,6 @@
                             {"name": "学霸","value": randomNum(d,c)},
                             {"name": "程序猿","value": randomNum(d,c)},
                             {"name": "天才和小可爱","value": randomNum(d,c)},
-                            {"name": "左老师","value": randomNum(d,c)},
                             {"name": "七仙女","value": randomNum(d,c)},
                             {"name": "爆肝","value": randomNum(d,c)},
                             {"name": "大佬","value": randomNum(d,c)},
@@ -138,8 +141,7 @@
                             {"name": "C","value": randomNum(g,h)},
                             {"name": "C++","value": randomNum(g,h)},
                             {"name": "Java","value": randomNum(g,h)},
-                            {"name": "蓝桥杯","value": randomNum(g,h)},
-                            {"name": "操作系统","value": randomNum(g,h)}
+                            {"name": "蓝桥杯","value": randomNum(g,h)}
                             ],
                         }]
                     });
