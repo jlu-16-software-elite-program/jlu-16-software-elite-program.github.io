@@ -17,6 +17,7 @@ var hashCode = function (str) {
 var i = 0;
 var isCategory = is_category();
 %>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/csshake@1.5.3/dist/csshake.min.css" integrity="sha256-QoyCSsL0iSqNXuNkAkGhLFXhVLSw61dpWkwA7QltbYY=" crossorigin="anonymous">
 
 <div id="category-cloud" class="container chip-container">
     <div class="card">
@@ -33,7 +34,7 @@ var isCategory = is_category();
                             : colorArr[i - 1];
                 %>
                 <a href="<%- url_for(category.path) %>" title="<%- category.name %>: <%- category.length %>">
-                    <span class="chip center-align waves-effect waves-light
+                    <span class="shake chip center-align waves-effect waves-light
                             <% if (isCategory && category.name == page.category) { %> chip-active <% } else { %> chip-default <% } %>"
                             style="background-color: <%- color %>;"><%- category.name %>
                         <span class="tag-length"><%- category.length %></span>

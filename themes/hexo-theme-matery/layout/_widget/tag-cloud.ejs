@@ -17,6 +17,7 @@ var hashCode = function (str) {
 var i = 0;
 var isTag = is_tag();
 %>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/csshake@1.5.3/dist/csshake.min.css" integrity="sha256-QoyCSsL0iSqNXuNkAkGhLFXhVLSw61dpWkwA7QltbYY=" crossorigin="anonymous">
 
 <div id="tags" class="container chip-container">
     <div class="card">
@@ -32,7 +33,7 @@ var isTag = is_tag();
                             : colorArr[i - 1];
                 %>
                 <a href="<%- url_for(tag.path) %>" title="<%- tag.name %>: <%- tag.length %>">
-                    <span class="chip center-align waves-effect waves-light
+                    <span class="shake chip center-align waves-effect waves-light
                             <% if (isTag && tag.name == page.tag) { %> chip-active <% } else { %> chip-default <% } %>"
                             data-tagname="<%- tag.name %>" style="background-color: <%- color %>;"><%- tag.name %>
                         <span class="tag-length"><%- tag.length %></span>
