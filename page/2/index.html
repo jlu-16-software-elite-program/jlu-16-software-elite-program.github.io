@@ -193,55 +193,9 @@
 </header>
 
     
-<style>
-    .carousel-control {
-        width: 45px;
-        height: 45px;
-        line-height: 55px;
-        border-radius: 45px;
-        background: transparent;
-        cursor: pointer;
-        z-index: 100;
-    }
-
-    #prev-cover {
-        position: absolute;
-        top: 48%;
-        left: 8px;
-    }
-
-    #next-cover {
-        position: absolute;
-        top: 48%;
-        right: 8px;;
-    }
-
-    #prev-cover i {
-        margin-right: 3px;
-    }
-
-    #next-cover i {
-        margin-left: 3px;
-    }
-
-    .carousel-control:hover {
-        background-color:rgba(0, 0, 0, .4);
-    }
-
-    .carousel-control i {
-        color: #fff;
-        font-size: 2.4rem;
-    }
-</style>
-
-
-
-<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
-    
-
-    <div class="carousel-item red white-text bg-cover about-cover">
-        <div class="container">
-            <div class="row">
+    <div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
     <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
         <div class="brand">
             <div class="title center-align">
@@ -276,77 +230,8 @@
 </script>
 
 
-
-            <div class="cover-btns">
-                <a href="#indexCard" class="waves-effect waves-light btn">
-                    <i class="fa fa-angle-double-down"></i>开启回忆
-                </a>
-
-                
-            </div>
-            <div class="cover-social-link">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</div>
-        </div>
     </div>
-
-    
 </div>
-
-<script>
-    $(function () {
-        let coverSlider = $('.carousel');
-        coverSlider.carousel({
-            duration: Number('120'),
-            fullWidth: true,
-            indicators: 'true' === 'true'
-        });
-
-        let carouselIntervalId;
-        
-        // Loop to call the next cover article picture.
-        let autoCarousel = function() {
-            carouselIntervalId = setInterval(function () {
-                coverSlider.carousel('next');
-            }, 5000);
-        };
-        autoCarousel();
-        
-
-        let restartPlay = function () {
-            
-            clearInterval(carouselIntervalId);
-            autoCarousel();
-            
-        };
-
-        
-        // prev and next cover post.
-        $('#prev-cover').click(function () {
-            coverSlider.carousel('prev');
-            restartPlay();
-        });
-        $('#next-cover').click(function () {
-            coverSlider.carousel('next');
-            restartPlay();
-        });
-        
-    });
-</script>
-
 
 
 <main class="content">
@@ -402,37 +287,6 @@
     </div>
     
 
-    
-        
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jlu-16-software-elite-program/jlu-16-software-elite-program.github.io@master/libs/aplayer/APlayer.min.css">
-<div class="">
-    
-    <div class="row">
-        <div class="col l8 offset-l2 m10 offset-m1 s12">
-            <div id="aplayer" class="music"></div>
-        </div>
-    </div>
-</div>
-
-<script src="https://cdn.jsdelivr.net/gh/jlu-16-software-elite-program/jlu-16-software-elite-program.github.io@master/libs/aplayer/APlayer.min.js"></script>
-<script>
-$(function () {
-    new APlayer({
-        container: document.getElementById('aplayer'),
-        fixed: 'true' === 'true',
-        autoplay: 'true' === 'true',
-        theme: '#42b983',
-        loop: 'all',
-        order: 'list',
-        preload: 'auto',
-        volume: Number('0.7'),
-        listFolded: 'true' === 'true',
-        listMaxHeight: '',
-        audio: eval([{"name":"Always With Me","artist":"宗次郎","url":"https://cdn.jsdelivr.net/gh/JLUtangchuan/picBed@1.1/E8r%20-%20%E3%80%8AE8r%E9%92%A2%E7%90%B4%E6%9B%B2%E3%80%8B%E5%8D%83%E4%B8%8E%E5%8D%83%E5%AF%BB%20Always%20With%20Me.mp3","cover":"https://cdn.jsdelivr.net/gh/JLUtangchuan/picBed@1.0/qyqs.jpg"}])
-    });
-});
-</script>
     
 
     
@@ -808,196 +662,19 @@ fromChart.setOption(option);
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/07/08/ci-yun/">
+                    <a href="/2020/06/26/2017cncc/">
                         <div class="card-image">
                             
+                            <img src="https://cdn.jsdelivr.net/gh/JLUtangchuan/picBed@dev/img/20200626224603.jpg" class="responsive-img" alt="2017CNCC">
                             
-                            <img src="https://cdn.jsdelivr.net/gh/jlu-16-software-elite-program/jlu-16-software-elite-program.github.io@master/medias/featureimages/4.jpg" class="responsive-img" alt="词云">
-                            
-                            <span class="card-title">词云</span>
+                            <span class="card-title">2017CNCC</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <!-- <div class="summary block-with-text">
                             
-                                词云
-本词云由黄昕睿制作完成
-
-
-    
-        
-    
-
-
-
-
-    function randomNum(minNum,maxNum){ 
-        switch(arguments.length){ 
-     
-                            
-                        </div> -->
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E9%BB%84%E6%98%95%E7%9D%BF/" class="post-category">
-                                    黄昕睿
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/07/08/da-xue-sheng-huo-ji-lu-shi-pin/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="https://cdn.jsdelivr.net/gh/jlu-16-software-elite-program/jlu-16-software-elite-program.github.io@master/medias/featureimages/3.jpg" class="responsive-img" alt="大学生活记录视频">
-                            
-                            <span class="card-title">大学生活记录视频</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <!-- <div class="summary block-with-text">
-                            
-                                大学生活记录视频     
-                            
-                        </div> -->
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E4%BA%8E%E6%B5%B7%E5%B7%9D/" class="post-category">
-                                    于海川
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E8%A7%86%E9%A2%91/">
-                            <span class="chip bg-color">视频</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/07/08/zhuo-ban-tong-xue-jia-xiang-tong-ji/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="https://cdn.jsdelivr.net/gh/jlu-16-software-elite-program/jlu-16-software-elite-program.github.io@master/medias/featureimages/17.jpg" class="responsive-img" alt="卓班同学家乡及毕业去向统计">
-                            
-                            <span class="card-title">卓班同学家乡及毕业去向统计</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <!-- <div class="summary block-with-text">
-                            
-                                卓班同学家乡及毕业去向统计
-    #posts-chart,
-    #categories-chart,
-    #tags-chart {
-        width: 100%;
-        height: 300px;
-   
-                            
-                        </div> -->
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E7%AA%A6%E6%98%9F%E7%A3%8A/" class="post-category">
-                                    窦星磊
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E5%9C%B0%E5%9B%BE/">
-                            <span class="chip bg-color">地图</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/07/08/da-xue-sheng-huo-ji-lu-tang-chuan/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="https://cdn.jsdelivr.net/gh/jlu-16-software-elite-program/jlu-16-software-elite-program.github.io@master/medias/featureimages/8.jpg" class="responsive-img" alt="大学生活记录-唐川">
-                            
-                            <span class="card-title">大学生活记录-唐川</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <!-- <div class="summary block-with-text">
-                            
-                                大学生活记录-唐川
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                                2017CNCC
 
 
 
@@ -1007,54 +684,7 @@ fromChart.setOption(option);
                         </div> -->
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-08
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%94%90%E5%B7%9D/" class="post-category">
-                                    唐川
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/07/08/xue-xiao-sheng-huo/">
-                        <div class="card-image">
-                            
-                            
-                            <img src="https://cdn.jsdelivr.net/gh/jlu-16-software-elite-program/jlu-16-software-elite-program.github.io@master/medias/featureimages/18.jpg" class="responsive-img" alt="学校生活">
-                            
-                            <span class="card-title">学校生活</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <!-- <div class="summary block-with-text">
-                            
-                                学校生活
-
-
-
-
-
-
-
-
-                            
-                        </div> -->
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-07-08
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-26
                             </span>
                             <span class="publish-author">
                                 
@@ -1072,16 +702,32 @@ fromChart.setOption(option);
                     
                     <div class="card-action article-tags">
                         
+                        <a href="/tags/%E6%9D%8E%E9%92%A6%E4%BC%A6/">
+                            <span class="chip bg-color">李钦伦</span>
+                        </a>
+                        
+                        <a href="/tags/CNCC/">
+                            <span class="chip bg-color">CNCC</span>
+                        </a>
+                        
+                        <a href="/tags/%E7%A6%8F%E5%B7%9E/">
+                            <span class="chip bg-color">福州</span>
+                        </a>
+                        
+                        <a href="/tags/%E9%AB%98%E8%8B%B1%E6%9D%B0/">
+                            <span class="chip bg-color">高英杰</span>
+                        </a>
+                        
                         <a href="/tags/%E5%A4%AA%E7%84%B6/">
                             <span class="chip bg-color">太然</span>
                         </a>
                         
-                        <a href="/tags/%E8%92%8B%E7%92%90%E5%AE%87/">
-                            <span class="chip bg-color">蒋璐宇</span>
+                        <a href="/tags/%E4%BA%8E%E6%B5%B7%E5%B7%9D/">
+                            <span class="chip bg-color">于海川</span>
                         </a>
                         
-                        <a href="/tags/%E5%88%81%E6%B0%B8%E5%8A%A8/">
-                            <span class="chip bg-color">刁永动</span>
+                        <a href="/tags/%E5%90%95%E5%9B%BD%E5%85%89/">
+                            <span class="chip bg-color">吕国光</span>
                         </a>
                         
                     </div>
@@ -1091,19 +737,21 @@ fromChart.setOption(option);
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/06/26/da-lian-shi-xi/">
+                    <a href="/2020/06/26/da-lian-dong-ruan-qi-ye-shi-xi/">
                         <div class="card-image">
                             
-                            <img src="https://cdn.jsdelivr.net/gh/JLUtangchuan/picBed@dev/img/20200626232418.jpg" class="responsive-img" alt="大连实习">
+                            <img src="https://cdn.jsdelivr.net/gh/JLUtangchuan/picBed@dev/img/20200626220740.jpg" class="responsive-img" alt="大连东软企业实习">
                             
-                            <span class="card-title">大连实习</span>
+                            <span class="card-title">大连东软企业实习</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <!-- <div class="summary block-with-text">
                             
-                                大连实习
+                                大连东软企业实习
+
+
 
 
 
@@ -1118,8 +766,8 @@ fromChart.setOption(option);
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/%E5%BC%A0%E7%BF%A0/" class="post-category">
-                                    张翠
+                                <a href="/categories/%E5%AE%8B%E5%98%89%E5%BA%9A/" class="post-category">
+                                    宋嘉庚
                                 </a>
                                 
                                 
@@ -1134,8 +782,12 @@ fromChart.setOption(option);
                             <span class="chip bg-color">大连</span>
                         </a>
                         
-                        <a href="/tags/%E8%AF%BE%E5%A0%82/">
-                            <span class="chip bg-color">课堂</span>
+                        <a href="/tags/%E5%AE%8B%E5%98%89%E5%BA%9A/">
+                            <span class="chip bg-color">宋嘉庚</span>
+                        </a>
+                        
+                        <a href="/tags/%E6%9D%8E%E9%92%A6%E4%BC%A6/">
+                            <span class="chip bg-color">李钦伦</span>
                         </a>
                         
                     </div>
@@ -1145,19 +797,19 @@ fromChart.setOption(option);
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/2020/06/26/yu-mao-qiu-sai/">
+                    <a href="/2020/06/09/hello-world/">
                         <div class="card-image">
                             
-                            <img src="https://cdn.jsdelivr.net/gh/JLUtangchuan/picBed@dev/img/20200626231636.jpg" class="responsive-img" alt="羽毛球赛">
+                            <img src="https://cdn.jsdelivr.net/gh/JLUtangchuan/picBed@1.0/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20200618194818.jpg" class="responsive-img" alt="毕业合影">
                             
-                            <span class="card-title">羽毛球赛</span>
+                            <span class="card-title">毕业合影</span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <!-- <div class="summary block-with-text">
                             
-                                羽毛球赛
+                                
 
 
 
@@ -1165,14 +817,14 @@ fromChart.setOption(option);
                         </div> -->
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-26
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-09
                             </span>
                             <span class="publish-author">
                                 
                                 <i class="fas fa-bookmark fa-fw icon-category"></i>
                                 
-                                <a href="/categories/%E5%BC%A0%E7%BF%A0/" class="post-category">
-                                    张翠
+                                <a href="/categories/%E5%94%90%E5%B7%9D/" class="post-category">
+                                    唐川
                                 </a>
                                 
                                 
@@ -1183,169 +835,12 @@ fromChart.setOption(option);
                     
                     <div class="card-action article-tags">
                         
-                        <a href="/tags/%E8%BF%90%E5%8A%A8/">
-                            <span class="chip bg-color">运动</span>
+                        <a href="/tags/%E9%BB%84%E6%AC%A3%E7%9D%BF/">
+                            <span class="chip bg-color">黄欣睿</span>
                         </a>
                         
-                        <a href="/tags/%E7%BE%BD%E6%AF%9B%E7%90%83%E8%B5%9B/">
-                            <span class="chip bg-color">羽毛球赛</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/06/26/lan-qiu-sai/">
-                        <div class="card-image">
-                            
-                            <img src="https://cdn.jsdelivr.net/gh/JLUtangchuan/picBed@dev/img/20200626231222.jpg" class="responsive-img" alt="篮球赛">
-                            
-                            <span class="card-title">篮球赛</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <!-- <div class="summary block-with-text">
-                            
-                                篮球赛
-
-
-
-
-                            
-                        </div> -->
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-26
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%BC%A0%E7%BF%A0/" class="post-category">
-                                    张翠
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E7%AF%AE%E7%90%83%E8%B5%9B/">
-                            <span class="chip bg-color">篮球赛</span>
-                        </a>
-                        
-                        <a href="/tags/%E8%BF%90%E5%8A%A8/">
-                            <span class="chip bg-color">运动</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/06/26/ban-hui/">
-                        <div class="card-image">
-                            
-                            <img src="https://cdn.jsdelivr.net/gh/JLUtangchuan/picBed@dev/img/20200626230531.jpg" class="responsive-img" alt="班会">
-                            
-                            <span class="card-title">班会</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <!-- <div class="summary block-with-text">
-                            
-                                班会
-
-
-
-
-                            
-                        </div> -->
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-26
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%BC%A0%E7%BF%A0/" class="post-category">
-                                    张翠
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E7%8F%AD%E4%BC%9A/">
-                            <span class="chip bg-color">班会</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            
-            <div class="article col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/2020/06/26/ban-ji-ju-hui/">
-                        <div class="card-image">
-                            
-                            <img src="https://cdn.jsdelivr.net/gh/JLUtangchuan/picBed@dev/img/20200626230127.jpg" class="responsive-img" alt="班级聚会">
-                            
-                            <span class="card-title">班级聚会</span>
-                        </div>
-                    </a>
-
-                    <div class="card-content article-content">
-                        <!-- <div class="summary block-with-text">
-                            
-                                班级聚会
-
-
-
-
-
-
-
-                            
-                        </div> -->
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-06-26
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/%E5%BC%A0%E7%BF%A0/" class="post-category">
-                                    张翠
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/%E7%8F%AD%E8%81%9A/">
-                            <span class="chip bg-color">班聚</span>
+                        <a href="/tags/%E7%8E%8B%E7%BF%B0%E6%A9%99/">
+                            <span class="chip bg-color">王翰橙</span>
                         </a>
                         
                     </div>
@@ -1375,18 +870,18 @@ fromChart.setOption(option);
     <div class="row">
         <div class="col s6 m4 l4">
             
-            <a class="left btn-floating btn-large disabled">
+            <a href="/"
+               class="left btn-floating btn-large waves-effect waves-light bg-color">
                 <i class="fas fa-angle-left"></i>
             </a>
             
         </div>
         <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">1 / 2</div>
+            <div class="center-align b-text-gray">2 / 2</div>
         </div>
         <div class="col s6 m4 l4">
             
-            <a href="/page/2/"
-               class="right btn-floating btn-large waves-effect waves-light bg-color">
+            <a class="right btn-floating btn-large disabled">
                 <i class="fas fa-angle-right"></i>
             </a>
             
