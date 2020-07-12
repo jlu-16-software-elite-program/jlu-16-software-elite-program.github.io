@@ -218,7 +218,7 @@ profile:
 
 # 首页访客地图
 visitor_map:
-  enable: true
+  enable: false
 
 
 # config my projects informations in about page.

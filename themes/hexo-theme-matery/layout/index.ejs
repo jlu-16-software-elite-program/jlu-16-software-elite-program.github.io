@@ -66,11 +66,11 @@
                 <%- partial('_widget/time_cloud') %>
             <% } %>
         </div>
-        <div class="container ">
+        <!-- <div class="container ">
             <% if (theme.visitor_map.enable) { %>
                 <%- partial('_widget/visitor_map') %>
             <% } %>
-        </div>
+        </div> -->
     </div>
     <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
@@ -145,6 +145,13 @@
             <% }); %>
         </div>
     </article>
+    <div id="indexCard" class="index-card">
+        <div class="container ">
+            <% if (theme.visitor_map.enable) { %>
+                <%- partial('_widget/visitor_map') %>
+            <% } %>
+        </div>
+    </div>
 
 </main>
 
